@@ -1,0 +1,35 @@
+#outer {
+  background: #292929;
+}
+
+#header .search {
+  background: #2c2c2c;
+}
+
+#header li.search {
+  border-bottom-color: #000;
+  border-top-color: #1f1f1f;
+}
+
+#header #search .text {
+  background: #8a8a8a;
+  color: #f7f7f7;
+}
+
+#header #search .text:focus {
+  color: #f7f7f7;
+}
+
+#header .user .open a:focus {
+  color: #fff;
+}
+
+#dashboard, #dashboard.own {
+  border-bottom-color: #1f1f1f;
+}
+
+/* filters */
+
+.filtering #inner {
+  border-right-color: #1f1f1f;
+}

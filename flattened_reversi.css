@@ -1,0 +1,561 @@
+/* key
+  #900 => #5998D6
+  #700 => #4c81b5;
+  dashboard:
+    #ccc (hover) => #1f1f1f
+    #dadada (current) => #262626
+*/
+
+body,
+#dashboard a.collapsed,
+#main,
+.actions .secondary a,
+.actions .secondary input {
+  background: #333;
+}
+
+#inner,
+#dashboard .secondary a:hover,
+#dashboard .secondary a:focus {
+  background: #313131;
+}
+
+body,
+input,
+textarea,
+.dynamic form {
+  color: #dadada;
+}
+
+a,
+a:link,
+a:visited:hover {
+  color: #eee;
+}
+
+a:visited {
+  color: #999;
+}
+
+
+/* 02 elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  color: #eee;
+}
+
+tbody th,
+tbody td {
+  background-color: #2b2b2b;
+}
+
+th,
+td {
+  border-color: #333;
+}
+
+tbody tr:hover th,
+tbody tr:hover td {
+  background: #292929;
+}
+
+/* 03 header */
+#header {
+  background: #5998D6;
+}
+
+#header .primary .open a,
+#header .primary .dropdown:hover a,
+#header .primary .dropdown a:focus {
+  color: #5998D6;
+}
+
+#header .menu {
+  background: #4c81b5;
+}
+
+#header .menu:before {
+  border-color: #4c81b5 transparent;
+}
+
+#header .menu li {
+  border-color: #5998D6;
+}
+
+#header .primary {
+  background: #2c2c2c;
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+#header .primary a,
+#header .primary .menu a,
+#header .primary .dropdown:hover .menu a {
+  color: #fff;
+}
+
+#header .primary .menu:before {
+  border-color: #2b2b2b transparent;
+}
+
+#header .primary .menu {
+  background: #2b2b2b;
+}
+
+#header .primary .menu li {
+  border-color: #000;
+}
+
+#header .dropdown .menu a:hover,
+#header .dropdown .menu a:focus {
+  background: rgba(0, 0, 0, 0.2)
+}
+
+#greeting a[href="/logout"]:hover {
+  background: #4c81b5;
+}
+
+
+/* 04 dashboard */
+#dashboard,
+#dashboard a {
+  color: #eee;
+}
+
+#dashboard a:hover,
+#dashboard a:focus {
+  background: #1f1f1f;
+  color: #5998D6;
+}
+
+#dashboard .current {
+  background: #262626;
+  color: #5998D6;
+}
+
+
+/* 05 main */
+#main.dashboard {
+  box-shadow: inset 1px 0 0 0 #1f1f1f;
+}
+
+
+/* 06 footer */
+#footer {
+  background: #2b2b2b;
+  border-top: 1px solid #111;
+  color: #eee;
+}
+
+#footer .heading, #footer a {
+  color: #eee;
+}
+
+
+/* 07 interactions */
+fieldset,
+fieldset fieldset fieldset {
+  background: #313131;
+  box-shadow: inset 0 0 0 1px #1f1f1f;
+}
+
+form dt,
+form .meta dt {
+  background: #333;
+  border-color: #1f1f1f;
+}
+
+fieldset fieldset,
+fieldset dl dl {
+  background: #333;
+}
+
+fieldset fieldset dt,
+fieldset dl dl dt,
+dd * + fieldset {
+  background: #303030;
+}
+
+input,
+textarea,
+.search input[type="text"] {
+  background: #2d2d2d;
+  box-shadow: 0 0 0 1px #000;
+}
+
+textarea:focus,
+select:focus,
+input:focus,
+.search input[type="text"]:focus {
+  background: #2c2c2c;
+  box-shadow: 0 0 0 1px #1ABC9C;
+}
+
+.toggled form,
+.dynamic form {
+  background: #333;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.autocomplete li.added {
+  background: #5a5a5a;
+  color: #f7f7f7;
+}
+
+.autocomplete li.added:hover {
+  background: #1f1f1f;
+}
+
+form.verbose legend,
+.verbose form legend {
+  background: #313131;
+  border-color: #1f1f1f;
+}
+
+.post .required .warnings,
+form dd.required,
+.required .autocomplete,
+.autocomplete .notice {
+  color: #dadada;
+}
+
+.autocomplete div.dropdown ul {
+  background: #2c2c2c;
+  border-color: #000;
+  color: #dadada;
+}
+
+.autocomplete .dropdown ul li:hover,
+li.selected {
+  background-color: #5998D6;
+}
+
+#modal {
+  background: #333;
+  border-color: #222;
+}
+
+#modal .content {
+  border-color: #222;
+}
+
+.LV_valid_field,
+input.LV_valid_field:hover,
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover,
+textarea.LV_valid_field:active {
+  background: #2c2c2c;
+  box-shadow: 0 0 0 1px #74cf31;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+  background: #2c2c2c;
+  border: none;
+  box-shadow: 0 0 0 1px #e74c3c;
+}
+
+.LV_invalid:before {
+  border-color: #efd1d1 transparent;
+}
+
+
+/* 08 actions */
+.actions a,
+.actions a:visited,
+.actions input,
+.actions label,
+.action a,
+.actions .action,
+a.action,
+a.action:link,
+a.action:visited,
+label.action,
+.dynamic a.action,
+input[type="submit"],
+button,
+.current,
+span.unread,
+.replied,
+span.claimed,
+.actions span.defaulted,
+.pagination .disabled,
+.heading .action a,
+.heading .action a:visited {
+  background-color: #5a5a5a;
+}
+
+.actions a:hover,
+.actions a:focus,
+.actions input:hover,
+.actions input:focus,
+.actions label:hover,
+.action a:hover,
+.action a:focus,
+a.action:hover,
+a.action:focus,
+label.action:hover,
+label.action:focus,
+.dynamic a.action:hover,
+.dynamic a.action:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+button:hover,
+button:focus,
+.heading .action a:hover,
+.heading .action a:focus {
+  background-color: #1f1f1f;
+}
+
+.actions .secondary a,
+.actions .secondary input {
+  color: #5998d6;
+}
+
+.actions .secondary a:hover,
+.actions .secondary a:focus,
+.actions .secondary input:hover,
+.actions .secondary input:focus {
+  background: #2b2b2b;
+}
+
+
+/* 09 roles states */
+.own,
+.draft,
+.draft .wrapper,
+.unread,
+.child,
+.unwrangled,
+.unreviewed,
+li.unread {
+  background: #2b2b2b;
+}
+
+.current,
+a.current,
+a.current:hover,
+.actions a.current,
+.actions a.current:hover,
+a.collapsed,
+.secondary,
+.pagination .disabled {
+  background: #2b2b2b;
+  box-shadow: 0 0 0 1px #555;
+  color: #eee;
+}
+
+
+/* 10 types groups */
+a.tag, .tags a {
+  color: #eee;
+}
+
+a.tag:hover,
+.listbox .heading a.tag:visited:hover {
+  background: #5998D6;
+  color: #111;
+}
+
+a.work {
+  color: #5998D6;
+}
+
+li.relationships a {
+  background: #1f1f1f;
+}
+
+dl.index dd {
+  background: #303030;
+}
+
+.statistics .index li:nth-of-type(even),
+.statistics .index dd dl.stats dt {
+  background: #353535;
+}
+
+.statistics .index li {
+  background: #313131;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.statistics .index dt a {
+  color: #5998d6;
+}
+
+.statistics .index dd dl.stats {
+  border-color: #222;
+}
+
+.statistics .index dd dl.stats dt {
+  color: #eaeaea;
+}
+
+.statistics .index li:nth-of-type(even) dd dl.stats dt {
+  background: #313131;
+}
+
+
+/* 11 listbox */
+.listbox,
+fieldset fieldset.listbox {
+  background: #2b2b2b;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.listbox .index, 
+.dashboard .listbox .index {
+  background: #2d2d2d;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.listbox li.blurb,
+.listbox ul.autocomplete input {
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.listbox .heading,
+.listbox .heading a:visited {
+  color: #eee;
+}
+
+.dashboard .own {
+  background: #313131;
+}
+
+
+/* 12 meta */
+dl.meta {
+  border-color: #202020;
+}
+
+
+/* 13 blurb */
+li.blurb,
+.blurb .blurb {
+  background: #313131;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.blurb h4 a:link,
+.blurb h4 img {
+  color: #5998D6;;
+}
+
+.picture .header {
+  border-color: #222;
+}
+
+.bookmark .user,
+.readings .reading .user,
+.reading .reading .user {
+  background: #2b2b2b;
+  border-color: #222;
+}
+
+
+/* 15 comment */
+div.comment,
+li.comment {
+  background: #2d2d2d;
+  box-shadow: inset 0 0 0 1px #222;
+}
+
+.comment h4.byline {
+  background: #222;
+}
+
+.thread .even {
+  background: #292929;
+}
+
+
+/* 16 system */
+.splash .module h3 {
+  border-color: #555;
+  color: #5998d6;
+}
+
+.splash .favorite li:nth-of-type(odd) a {
+  background: #292929;
+}
+
+.splash .favorite li:nth-of-type(odd) a:hover, .splash .favorite li:nth-of-type(odd) a:focus {
+  background: #5998d6;
+}
+
+.splash .news li {
+  border-color: #444;
+}
+
+
+/* 17 zone home */
+.home .header h2 {
+  border-color: #555;
+}
+
+
+/* 18 zone search browse */
+.filters fieldset {
+  background: #292929;
+}
+
+.filters dt a:hover {
+  color: #eee;
+}
+
+.filters .tags ul {
+  border-bottom-color: #1f1f1f;
+}
+
+.filters select {
+  background: #222;
+  box-shadow: 0 0 0 1px #000;
+  color: #eee;
+}
+
+
+/* 22 system messages */
+.required {
+  color: #5998d6;
+}
+
+.notice,
+.comment_notice,
+ul.notes,
+.caution,
+.error,
+.comment_error,
+.caution {
+  background: #1f1f1f;
+  border-color: #5998d6;
+  color: #5998d6;
+}
+
+.caution {
+  border-color: #F1C40F;
+  color: #F1C40F;
+}
+
+.error,
+.comment_error {
+  border-color: #E74C3C;
+  color: #E74C3C;
+}
+
+
+/* form elements */
+
+select {
+  background-color: #2b2b2b;
+  background: linear-gradient(to bottom, #2b2b2b 15%, #292929 100%);
+  box-shadow: 0 0 0 1px #222;
+  color: #dadada;
+}

@@ -1,0 +1,245 @@
+#outer {
+  background: #eaeaea;
+  position: static;
+}
+
+#inner {
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  word-break: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#header .heading a {
+  display: block;
+}
+
+#header .heading a:before {
+  content: "AO3";
+}
+
+#header .heading img,
+#header .heading span {
+  display: none;
+}
+
+#header li,
+#header .user {
+  position: static;
+}
+
+#header .menu:before {
+  content: none;
+}
+
+#header .menu {
+  width: 100%;
+}
+
+#header .primary {
+  box-shadow: none;
+  z-index: 65;
+}
+
+#header .primary .menu {
+  left: 0;
+  z-index: 65;
+}
+
+#header .search {
+  background: #fff;
+  text-align: right;
+  width: 100%;
+}
+
+#header li.search {
+  border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #dadada;
+}
+
+#header #search .text {
+  background: #8a8a8a;
+  color: #f7f7f7;
+}
+
+#header #search .text:focus {
+  color: #f7f7f7;
+}
+
+#header .user .open a:focus {
+  color: #fff;
+}
+
+#header #greeting .menu {
+  z-index: 75;
+}
+
+#dashboard .navigation {
+  display: inline;
+  float: none;
+  padding: 0;
+}
+
+#dashboard .navigation li {
+  display: block;
+  float: left;
+  margin: 0 0 .25em;
+  width: 33.3%;
+}
+
+#dashboard a,
+#dashboard .current {
+  display: block;
+  border-radius: .25em;
+  padding: 0 .25em;
+}
+
+#main.dashboard {
+  box-shadow: none;
+  clear: both;
+  margin-left: 0;
+  padding-top: .5em;
+}
+
+#main {
+  padding-top: .5em;
+}
+
+#main.dashboard .listbox .index {
+  width: auto;
+}
+
+.actions {
+  line-height: 2.5;
+}
+
+.statistics .index li > dl > dt,
+.statistics .index li > dl > dd {
+  width: 100%;
+}
+
+.statistics .index dd dl.stats {
+  border-left: none;
+}
+
+.media .medium,
+.alphabet .letter li {
+  margin-left: 0;
+  width: 100%;
+}
+
+/* icons should be horizontal across the top of the blurb */
+
+.blurb .header {
+  padding-top: 1.75em;
+}
+
+.blurb .header .heading {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.blurb .header h4 {
+  line-height: 1.25;
+}
+
+.blurb ul.required-tags {
+  width: 109px;
+}
+
+.blurb ul.required-tags li {
+  margin-bottom: 0;
+}
+
+.blurb ul.required-tags li+li {
+  left: 56px;
+  position: absolute;
+  top: 0;
+}
+
+.blurb ul.required-tags li+li+li {
+  left: 28px;
+}
+
+.blurb ul.required-tags li+li+li+li {
+  left: 84px;
+  top: 0;
+}
+
+.required-tags .warnings:after {
+  top: 0;
+}
+
+.bookmark p.status {
+  left: 112px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: .75em;
+  right: auto;
+}
+
+.bookmark .datetime {
+  top: 0;
+}
+
+/* style the bookmarked date like tags and collections */
+
+.bookmark .user .datetime {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: .875em;
+  line-height: 2;
+  margin-left: .5714em;
+  position: static;
+}
+
+.bookmark .user .datetime:before {
+  content: "Date Bookmarked: ";
+}
+
+.picture .header .heading {
+  margin-left: 65px;
+}
+
+/* filters */
+
+.javascript form.filters {
+  right: -16em;
+  width: 16em;
+}
+
+.javascript .filters fieldset {
+  background: transparent;
+}
+
+.filtering #inner {
+  box-sizing: content-box;
+  border-right: 1px solid #dadada;
+  right: 16em;
+}
+
+/* admin banner */
+
+#admin-banner {
+  background: #c2d2df;
+}
+
+#admin-banner.alert {
+  background: #edb202;
+}
+
+#admin-banner.event {
+  background: #600;
+}
+
+#admin-banner input[type="submit"],
+#admin-banner input[type="submit"]:focus,
+#admin-banner input[type="submit"]:hover {
+  background: transparent;
+}

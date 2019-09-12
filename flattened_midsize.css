@@ -1,0 +1,108 @@
+#outer {
+  background: #eaeaea;
+  position: static;
+}
+
+#inner {
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  word-break: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+#dashboard,
+#dashboard.own {
+  float: left;
+  font-size: 0.875em;
+  border-bottom: 1px solid #dadada;
+  border-radius: 0;
+  margin: 0;
+  padding-top: 0.25em;
+  width: 100%;
+}
+
+#dashboard .navigation {
+  float: left;
+  min-width: 25%;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+
+#dashboard .navigation li {
+  display: block;
+  margin: 0 0 0.25em;
+}
+
+#dashboard a,
+#dashboard .current {
+  display: block;
+  border-radius: 0.25em;
+  padding: 0 0.25em;
+}
+
+#dashboard li.pseud {
+  position: relative;
+}
+
+#dashboard ul.secondary {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 55;
+  box-shadow: 0 0 0 1px;
+}
+
+#dashboard ul.secondary li {
+  float: none;
+  width: auto;
+}
+
+#main.dashboard {
+  box-shadow: none;
+  clear: both;
+  margin-left: 0;
+  padding-top: 0.5em;
+}
+
+#main {
+  padding-top: 0.5em;
+}
+
+#main.dashboard .listbox .index {
+  width: auto;
+}
+
+.actions {
+  line-height: 2.5;
+}
+
+.blurb .header h4 {
+  line-height: 1.25;
+}
+
+/* admin banner */
+
+#admin-banner {
+  background: #c2d2df;
+}
+
+#admin-banner.alert {
+  background: #edb202;
+}
+
+#admin-banner.event {
+  background: #600;
+}
+
+#admin-banner input[type="submit"],
+#admin-banner input[type="submit"]:focus,
+#admin-banner input[type="submit"]:hover {
+  background: transparent;
+}

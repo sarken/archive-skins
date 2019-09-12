@@ -1,0 +1,157 @@
+/* action colors */
+/* green - positive action */
+input[value="Submit"],
+input[value="Post"],
+input[value="Update"],
+input[value="Use"],
+input[value="Comment"],
+input[value="Post Without Preview"],
+.replied {
+  background-color: #74CF31;
+}
+
+input:hover[value="Submit"],
+input:hover[value="Post"],
+input:hover[value="Update"],
+input:hover[value="Use"],
+input:hover[value="Comment"],
+input:hover[value="Post Without Preview"],
+input:focus[value="Submit"],
+input:focus[value="Post"],
+input:focus[value="Update"],
+input:focus[value="Use"],
+input:focus[value="Comment"],
+input:focus[value="Post Without Preview"] {
+  background-color: #5EAB27;
+}
+
+
+/* orange - caution */
+input[value="Update All Works"],
+span.unread,
+span.claimed {
+  background-color: #E67E22;
+}
+
+input:hover[value="Update All Works"],
+input:focus[value="Update All Works"] {
+  background-color: #D35400;
+}
+
+
+/* red - danger */
+input[value*="Delete"],
+input[value*="Unsubscribe"],
+input[value="Remove"],
+input[value*="Orphan"],
+.actions a[data-method="delete"],
+.actions a[href*="comments/delete_comment"],
+.cancel a,
+.close a {
+  background-color: #E74C3C;
+}
+
+input:hover[value*="Delete"],
+input:hover[value*="Unsubscribe"],
+input:hover[value="Remove"],
+input:hover[value*="Orphan"],
+.actions a:hover[data-method="delete"],
+.actions a:hover[href*="comments/delete_comment"],
+.cancel a:hover,
+.close a:hover,
+input:focus[value*="Delete"],
+input:focus[value*="Unsubscribe"],
+input:focus[value="Remove"],
+input:focus[value*="Orphan"],
+.actions a:focus[data-method="delete"],
+.actions a:focus[href*="comments/delete_comment"],
+.cancel a:focus,
+.close a:focus {
+  background-color: #C0392B;
+}
+
+
+/* pink - kudos */
+input[id="kudo_submit"] {
+  background-color: #e43795;
+}
+
+input[id="kudo_submit"]:hover,
+input[id="kudo_submit"]:focus {
+  background-color: #c42d80;
+}
+
+/* form elements */
+select, 
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-appearance: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+select {
+  background-color: #fafafa;
+  background: linear-gradient(to bottom, #fafafa 15%, #f3f3f3 100%);
+  border: none;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0 1px #cacaca;
+  font-size: 87.5%;
+  line-height: 1.286;
+  padding: 0.25em;
+  transition: 0.14s;
+  vertical-align: baseline;
+}
+
+.filters select {
+  font-size: 87.5%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px #cacaca;
+  height: 0.875em;
+  width: 0.875em;
+}
+
+input[type="radio"] {
+  border-radius: 0.875em;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: #74CF31;
+  box-shadow: inset 0 0 0 1px #5EAB27;
+}
+
+input[type="checkbox"]:disabled:checked,
+input[type="radio"]:disabled:checked {
+  opacity: 0.5;
+}
+
+input:checked + label {
+  font-weight: 700;
+}
+
+.filters [type="checkbox"] + .indicator:before {
+  background: none;
+  border: none;
+  padding-left: 0;
+}
+
+.filters [type="checkbox"]:checked + .indicator:before {
+  background: none;
+  color: #5EAB27;
+}
+
+.filters .exclude [type="checkbox"] + .indicator:before {
+  content: "\2718";
+}
+
+.filters .exclude [type="checkbox"]:checked + .indicator:before {
+  background: none;
+  color: #C0392B;
+}
