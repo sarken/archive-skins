@@ -24,8 +24,7 @@ a.work,
 .system .latest h3,
 .system div.news h3,
 .system .intro a,
-.system .intro em,
- {
+.system .intro em {
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -37,7 +36,8 @@ body {
   background: transparent;
 }
 
-input[type="submit"], button {
+input[type="submit"],
+button {
   -webkit-appearance: none;
 }
 
@@ -758,8 +758,8 @@ thead th a:link.current {
   font-family: "Lucida Grande", "Lucida Sans Unicode", "GNU Unifont", Verdana, Helvetica, sans-serif;
   font-weight: 500;
   padding: 0;
-    border-radius: 0;
-    box-shadow: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 thead th a:link.current {
@@ -779,6 +779,7 @@ thead th a:link.current {
 #wrangulator tbody .actions input:focus {
   border-color: #f7f7f7;
 }
+
 
 /* 09 roles states */
 .own,
@@ -1408,7 +1409,7 @@ form.filters {
   margin-top: 0.25em;
 }
 
-.filters .expanded + .expandable ul li, 
+.filters .expanded + .expandable ul li,
 .filters .expanded + .expandable ul li [type="checkbox"] + .indicator:before {
   padding: 0;
 }
@@ -1617,7 +1618,7 @@ span.question {
 }
 
 .event input[type="submit"]:focus,
-.event input[type="submit"]:hover, {
+.event input[type="submit"]:hover {
   background: #500;
 }
 
@@ -1634,4 +1635,14 @@ li.news .actions {
 .listbox {
   float: left;
   width: 100%;
+}
+
+/* Safari 16.4: Fix bug where listboxes on dashboards stack. */
+
+.user.home {
+  float: left;
+}
+
+.home > div.listbox {
+  clear: both;
 }
