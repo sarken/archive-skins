@@ -243,7 +243,6 @@ tbody tr:hover td {
   border-radius: 0.25em;
 }
 
-
 /* to make the navigation row taller, modify the margin on this and #header .primary a, but calculate this based on 16px and #header .primary a on 14px, e.g. if #header .primary a gets margin: 1em 2em, this gets margin: 0.875em 1.75em and I'll give you a quarter if you don't ask me why. ps: don't forget to give #header #search .button a margin-right equal to that of #header .primary a */
 #header #search .text {
   background: transparent;
@@ -343,7 +342,8 @@ tbody tr:hover td {
 }
 
 #footer .heading,
-#footer a {
+#footer a,
+#footer button {
   color: #5a5a5a;
 }
 
@@ -575,9 +575,11 @@ textarea.LV_invalid_field:active {
 .action:link,
 .action:hover,
 .action:focus,
+.actions button,
 .actions input,
 input[type="submit"],
 button,
+button[type="submit"],
 .current,
 .actions label,
 span.unread,
@@ -596,8 +598,10 @@ span.delete,
 }
 
 .actions a:hover,
+.actions button:hover,
 .actions input:hover,
 .actions a:focus,
+.actions button:focus,
 .actions input:focus,
 label.action:hover,
 .actions a:active,
@@ -632,7 +636,6 @@ span.delete,
   width: auto;
 }
 
-
 /* now get into new styles */
 .actions,
 .actions .dropdown {
@@ -642,6 +645,7 @@ span.delete,
 .actions a,
 .actions a:link,
 .actions a:visited,
+.actions button,
 .actions input,
 .actions label,
 .action a,
@@ -654,6 +658,7 @@ label.action,
 .dynamic a.action,
 input[type="submit"],
 button,
+button[type="submit"],
 .current,
 span.unread,
 .replied,
@@ -677,6 +682,8 @@ span.claimed,
 
 .actions a:hover,
 .actions a:focus,
+.actions button:hover,
+.actions button:focus,
 .actions input:hover,
 .actions input:focus,
 .actions label:hover,
@@ -692,6 +699,8 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 button:hover,
 button:focus,
+button[type="submit"]:hover,
+button[type="submit"]:focus,
 .heading .action a:hover,
 .heading .action a:focus {
   background: #5a5a5a padding-box;
@@ -1247,6 +1256,14 @@ li.comment div.icon {
   top: 0;
 }
 
+.comment .icon .anonymous {
+  background: url("/images/imageset.png") no-repeat -75px -450px;
+}
+
+.comment .icon .visitor {
+  background: url("/images/imageset.png") no-repeat 0px -450px;
+}
+
 .thread .even {
   margin-left: 80px;
 }
@@ -1622,6 +1639,7 @@ span.question {
   background: #500;
 }
 
+
 /* sandbox */
 .blurb.own dl.stats {
   padding-left: 0;
@@ -1635,14 +1653,5 @@ li.news .actions {
 .listbox {
   float: left;
   width: 100%;
-}
-
-/* Safari 16.4: Fix bug where listboxes on dashboards stack. */
-
-.user.home {
-  float: left;
-}
-
-.home > div.listbox {
-  clear: both;
+  clear: none;
 }
