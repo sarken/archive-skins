@@ -1,0 +1,15 @@
+#outer {
+  background: #393636;
+}
+
+#dashboard,
+#dashboard.own {
+  border-top-color: #414044;
+  border-bottom-color: #2a2728;
+}
+
+form.filters,
+form.filters .heading,
+form.filters .expander {
+  color: #c9c0bd;
+}
