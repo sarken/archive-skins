@@ -1,0 +1,45 @@
+#header .menu:before {
+  content: none;
+}
+
+#header .primary {
+  box-shadow: none;
+}
+
+#header .search {
+  background: #3a3637;
+}
+
+#header li.search {
+  border-bottom: 1px solid #2a2728;
+  border-top: 1px solid #2a2728;
+}
+
+#header #search .text {
+  background: #4f494a;
+  color: #c9c0bd;
+}
+
+#header #search .text:focus {
+  color: #c9c0bd;
+}
+
+#header .user .open a:focus {
+  color: #a8a7ad;
+}
+
+#main.dashboard {
+  box-shadow: none;
+}
+
+.javascript {
+  background: #393636;
+}
+
+.javascript .filters fieldset {
+  background: transparent;
+}
+
+.filtering #inner {
+  border-right: 1px solid #2a2728;
+}
