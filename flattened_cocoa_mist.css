@@ -7,7 +7,7 @@ body {
 a,
 a:link,
 a:visited:hover {
-  color: #b0a4a0
+  color: #b0a4a0;
 }
 
 a:visited {
@@ -163,7 +163,8 @@ tbody tr:hover td {
   background: #4f494a;
 }
 
-#dashboard a {
+#dashboard a,
+#dashboard span {
   color: #c9c0bd;
 }
 
@@ -214,7 +215,8 @@ tbody tr:hover td {
 }
 
 #footer .heading,
-#footer a {
+#footer a,
+#footer button {
   color: #938985;
 }
 
@@ -375,6 +377,7 @@ dd.required {
 .actions a,
 .actions a:link,
 .actions a:visited,
+.actions button,
 .actions input,
 .actions label,
 .action a,
@@ -387,6 +390,7 @@ label.action,
 .dynamic a.action,
 input[type="submit"],
 button,
+button[type="submit"],
 .current,
 span.unread,
 .replied,
@@ -401,6 +405,8 @@ span.claimed,
 
 .actions a:hover,
 .actions a:focus,
+.actions button:hover,
+.actions button:focus,
 .actions input:hover,
 .actions input:focus,
 .actions label:hover,
@@ -416,6 +422,8 @@ input[type="submit"]:hover,
 input[type="submit"]:focus,
 button:hover,
 button:focus,
+button[type="submit"]:hover,
+button[type="submit"]:focus,
 .heading .action a:hover,
 .heading .action a:focus {
   background-color: #28272a;
@@ -893,7 +901,8 @@ span.question {
 
 
 /* sandbox */
-select, .filters select {
+select,
+.filters select {
   background-color: #938985;
   background: linear-gradient(to bottom, #423e3f 15%, #312d2f 100%);
   color: #c9c0bd;
