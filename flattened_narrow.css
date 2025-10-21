@@ -237,9 +237,3 @@ h2 {
 #admin-banner.event {
   background: #600;
 }
-
-#admin-banner input[type="submit"],
-#admin-banner input[type="submit"]:focus,
-#admin-banner input[type="submit"]:hover {
-  background: transparent;
-}
