@@ -569,12 +569,11 @@ textarea.LV_invalid_field:active {
 
 /* 08 actions */
 /* reset this fucking mess */
+/* removed .action:hover, .action:focus to fix issue with banner, may need to restore */
 .actions a,
 .actions a:link,
 .action,
 .action:link,
-.action:hover,
-.action:focus,
 .actions button,
 .actions input,
 input[type="submit"],
@@ -1596,7 +1595,7 @@ span.question {
   right: auto;
 }
 
-.announcement input[type="submit"] {
+.announcement .action {
   background: #c2d2df;
   border: 0;
   border-bottom: 1px solid #c2d2df;
@@ -1607,35 +1606,36 @@ span.question {
   font-size: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
   position: absolute;
   right: 0;
   top: 0;
   width: 2.5em;
 }
 
-.alert input[type="submit"] {
+.alert .action {
   background: #edb202;
   border-color: #edb202;
 }
 
-.event input[type="submit"] {
+.event .action {
   background: #600;
   border-color: #600;
   color: #fff;
 }
 
-.announcement input[type="submit"]:focus,
-.announcement input[type="submit"]:hover {
+.announcement .action:focus,
+.announcement .action:hover {
   background: #b9c9d5;
 }
 
-.alert input[type="submit"]:focus,
-.alert input[type="submit"]:hover {
+.alert .action:focus,
+.alert .action:hover {
   background: #e5ac02;
 }
 
-.event input[type="submit"]:focus,
-.event input[type="submit"]:hover {
+.event .action:focus,
+.event .action:hover {
   background: #500;
 }
 
