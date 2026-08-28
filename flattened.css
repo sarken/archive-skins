@@ -834,7 +834,7 @@ a.collapsed,
   border-radius: 0.25em;
 }
 
-.wrapper {
+.wrapper:has(> table, > .meta) {
   box-shadow: none;
 }
 
