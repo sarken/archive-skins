@@ -788,6 +788,22 @@ thead th a:link.current {
   border-color: #f7f7f7;
 }
 
+.javascript .work.navigation .download .secondary {
+  background: #fafafa;
+  box-shadow: 0 0 0 1px #cacaca;
+  border: none;
+}
+
+.javascript .work.navigation .download .secondary a {
+  background: transparent;
+  box-shadow: 0 0 0 1px #eaeaea;
+}
+
+.javascript .work.navigation .download .secondary a:hover,
+.javascript .work.navigation .download .secondary a:focus {
+  background: #eee;
+}
+
 
 /* 09 roles states */
 .own,
