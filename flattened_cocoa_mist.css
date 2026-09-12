@@ -474,6 +474,21 @@ thead th a:link.current {
   border-color: #423e3f;
 }
 
+.javascript .work.navigation .download .secondary {
+  background: #3e393b;
+  box-shadow: 0 0 0 1px #221f20;
+}
+
+.javascript .work.navigation .download .secondary a {
+  background: #28272a;
+  box-shadow: none;
+}
+
+.javascript .work.navigation .download .secondary a:hover,
+.javascript .work.navigation .download .secondary a:focus {
+  background: #28272a;
+}
+
 
 /* 09 roles states */
 .own,
